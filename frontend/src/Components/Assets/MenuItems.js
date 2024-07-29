@@ -36,11 +36,10 @@ export const MenuItems = [
     { title: 'Nomad Knife', path: '/knives?category=NomadKnife', image: nomadknife},
     { title: 'Paracord Knife', path: '/knives?category=ParacordKnife', image: paracordknife},
     { title: 'Shadow Daggers', path: '/knives?category=ShadowDaggers', image: shadowdaggers},
-    { title: 'Skeleton Knife', path: '/knives?category=SkeletonKnife', image: skeletonknife},
-    { title: 'Stiletto Knife', path: '/knives?category=StilettoKnife', image: stilettoknife},
-    { title: 'Survival Knife', path: '/knives?category=SurvivalKnife', image: survivalknife},
-    { title: 'Talon Knife', path: '/knives?category=TalonKnife', image: talonknife},
-    { title: 'Ursus Knife', path: '/knives?category=UrsusKnife', image: ursusknife}
-    // Add other knife types following the same format...
+    { title: 'Skeleton Knife', path: '/knives?category=Skeleton', image: skeletonknife},
+    { title: 'Stiletto Knife', path: '/knives?category=Stiletto', image: stilettoknife},
+    { title: 'Survival Knife', path: '/knives?category=Survival Knife', image: survivalknife},
+    { title: 'Talon Knife', path: '/knives?category=Talon Knife', image: talonknife},
+    { title: 'Ursus Knife', path: '/knives?category=Ursus Knife', image: ursusknife}
 ]
 export default MenuItems
