@@ -2,11 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './CSS/Knives.css';
 import all_knives from '../Components/Assets/all_knifes';
+import available from '../Components/Assets/availableknives'
 import Item from '../Components/Knife/Knife';
+import { useUser } from '../Context/UserContext';
 
 const ITEMS_PER_PAGE = 30;
 
 export const Knives = () => {
+
+  const { user } = useUser();
+  const knives = user?.role === 'admin' ? all_knives : available;
+
+
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterCategory, setFilterCategory] = useState('');
@@ -24,7 +31,7 @@ export const Knives = () => {
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
   
-  const filteredItems = all_knives.filter(knife =>
+  const filteredItems = knives.filter(knife =>
     (!searchQuery || knife.name.toLowerCase().includes(searchQuery.toLowerCase())) &&
     (!filterCategory || knife.category.toLowerCase() === filterCategory.toLowerCase()) &&
     (!minPrice || knife.knife_price >= parseFloat(minPrice)) &&
@@ -70,7 +77,7 @@ export const Knives = () => {
           className="filter-category"
         >
           <option value="">All Categories</option>
-          {Array.from(new Set(all_knives.map(knife => knife.category))).map(category => (
+          {Array.from(new Set(knives.map(knife => knife.category))).map(category => (
             <option key={category} value={category}>{category}</option>
           ))}
         </select>

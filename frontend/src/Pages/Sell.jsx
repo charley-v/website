@@ -7,6 +7,7 @@ import inventory from '../Components/Assets/Inventory'
 const Sell = () => {
     const navigate = useNavigate()
     const { user } = useUser()
+    const [maininventory, setInvetory] = useState(inventory)
     const [sellingItems, setSellingItems] = useState([])
     
     useEffect(() => {
@@ -17,13 +18,13 @@ const Sell = () => {
 
     const addToSellingItems = (item) => {
         setSellingItems((prevItems) => [...prevItems, item]);
-        inventory((prevInventory) =>
+        setInvetory((prevInventory) =>
             prevInventory.filter((invItem) => invItem.id !== item.id)
         );
     };
 
     const removeFromSellingItems = (item) => {
-        inventory((prevInventory) => [...prevInventory, item]);
+        setInvetory((prevInventory) => [...prevInventory, item]);
         setSellingItems((prevItems) => prevItems.filter((sellItem) => sellItem.id !== item.id));
     };
 
@@ -39,7 +40,7 @@ const Sell = () => {
             <div className="inventory-grid">
                 <h2>Your Inventory</h2>
                 <div className="inventory-items">
-                    {inventory.map((item) => (
+                    {maininventory.map((item) => (
                         <div key={item.id} className="inventory-item">
                             <img src={item.image} alt={item.name} />
                             <p>{item.name}</p>
