@@ -19,7 +19,7 @@ export const Loginsignup = (props) => {
     const guestCredentials = {
       email: "user@gmail.com",
       password: "123456",
-      profile:{name: "Uuest", email: "user@gmail.com", username: "User123"},
+      profile:{name: "User", email: "user@gmail.com", username: "User123"},
     }
     if (email === adminCredentials.email && password === adminCredentials.password) {
       login('admin', adminCredentials.profile);
