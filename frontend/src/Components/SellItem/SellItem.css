@@ -1,0 +1,81 @@
+.sell-item-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure modal is above all other content */
+}
+
+.sell-item-content {
+    background-color: #333;
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%; /* Adjust width as necessary */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.sell-item-left {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell-item-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sell-item-right {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.sell-price-input {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sell-price-input input {
+    padding: 8px;
+    width: 150px; /* Set a specific width for the input */
+    margin-left: 10px;
+}
+
+.sell-confirm-button, .close-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28a745; /* Green background for confirm */
+    margin-right: 10px;
+}
+
+.sell-confirm-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.close-button {
+    background-color: #ff6347; /* Red background for close */
+}
+
+.close-button:hover {
+    background-color: #ff4500; /* Darker red on hover */
+}
