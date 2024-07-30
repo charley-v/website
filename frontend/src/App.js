@@ -21,6 +21,7 @@ import Checkout from './Pages/Checkout';
 import Confirmation from './Pages/Confirmation';
 import Transactions  from './Pages/Transactions';
 import ManageAccounts from './Pages/ManageAccounts';
+import ManageInventory from './Pages/ManageInventory';
 
 function App() {
   return (
@@ -65,7 +66,7 @@ function App() {
         <Route path="/search" element={<SearchedKnives />} />
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/manage-accounts" element={<ManageAccounts />} />
-
+        <Route path="/manage-inventory" element={<ManageInventory/>}/>
         
             <Route path="/admin" component={AdminRoute} element={<AdminProfile/>}/>
             <Route path="/guest" component={GuestRoute} element={<GuestProfile/>}/>

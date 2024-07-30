@@ -18,7 +18,7 @@ const handleManageAccounts = () => {
 };
 
 const handleEditInventory = () => {
-    navigate('/edit-inventory');
+    navigate('/manage-inventory');
 };
 
 return (
@@ -29,7 +29,7 @@ return (
         <div className="admin-buttons">
             <button onClick={handleViewTransactions}>View all transactions</button>
             <button onClick={handleManageAccounts}>Manage Accounts</button>
-            <button onClick={handleEditInventory}>Edit Inventory</button>
+            <button onClick={handleEditInventory}>Manage Inventory</button>
         </div>
     </div>
 );

@@ -1,0 +1,68 @@
+.inventory {
+    color: white;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #333;
+}
+
+.add-knife-form {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.add-knife-form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-knife-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-knife-form button:hover {
+    transform: scale(1.05);
+}
+
+.inventory-buttons {
+    margin-top: 20px;
+}
+
+.inventory-buttons button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inventory-buttons button:hover {
+    transform: scale(1.05);
+}

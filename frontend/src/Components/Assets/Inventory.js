@@ -4,6 +4,8 @@ import flipDamascusSteel from './FlipKnife/flip-Damascus Steel.png'
 import bayonetgamma from './Bayonet/bayonet-gammadoppler.png'
 
 
+//user inventory 
+
 let inventory = [
     {
         id: 55,
