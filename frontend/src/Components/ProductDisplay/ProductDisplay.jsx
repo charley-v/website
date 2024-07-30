@@ -102,7 +102,7 @@ export const ProductDisplay = (props) => {
             No
           </button>
         </div>
-        <button className="add-to-cart" onClick={() => addToCart(product.id, selectedWear, displayPrice)}>ADD TO CART</button>
+        <button className="add-to-cart" onClick={() => addToCart(product, selectedWear, isStatTrak, displayPrice)}>ADD TO CART</button>
       </div>
     </div>
   );
