@@ -87,13 +87,6 @@ import ursusknifecrimsonweb from './Ursus Knife/UrsusKnife-crimsonweb.png'
 import ursusknifestained from './Ursus Knife/UrsusKnife-stained.png'
 
 
-
-
-
-
-import classicforestddpat from './ClassicKnife/classic-forest DDPAT.png'
-
-
 //knives that are available to purchse to users, can be updated by admin
 let availableknives = [
 {

@@ -1,11 +1,36 @@
 .about-container {
-  display: flex;
-  justify-content: center; /* 가로 중앙 정렬 */
-  align-items: 30px; /* 세로 중앙 정렬 */
-  height: 50vh; /* 화면 전체 높이 */
-  font-size: 30px;
-  color: #f8f4f4;
-  text-align: center;
-  margin: 0; /* 여백 제거 */
-  }
-  
+  padding: 20px;
+  color: white;
+  background-color: #333;
+}
+
+.about-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.about-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.faq-section {
+  margin-top: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-answer {
+  font-size: 1.2em;
+}
