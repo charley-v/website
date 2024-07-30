@@ -19,6 +19,8 @@ import GuestProfile from './Pages/GuestProfile';
 import AdminProfile from './Pages/AdminProfile';
 import Checkout from './Pages/Checkout';
 import Confirmation from './Pages/Confirmation';
+import Transactions  from './Pages/Transactions';
+import ManageAccounts from './Pages/ManageAccounts';
 
 function App() {
   return (
@@ -61,6 +63,8 @@ function App() {
         <Route path='/confirmation' element={<Confirmation/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path="/search" element={<SearchedKnives />} />
+        <Route path="/transactions" element={<Transactions />} />
+        <Route path="/manage-accounts" element={<ManageAccounts />} />
 
         
             <Route path="/admin" component={AdminRoute} element={<AdminProfile/>}/>

@@ -1,0 +1,42 @@
+.transactions-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.transactions-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-header, .table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.table-header {
+    background-color: #333;
+}
+
+.header-item, .row-item {
+    flex: 1;
+    text-align: center;
+}
+
+.header-item {
+    font-weight: bold;
+}
+
+.table-row:nth-child(even) {
+    background-color: #151515;
+}
