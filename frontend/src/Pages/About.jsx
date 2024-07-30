@@ -4,7 +4,7 @@ import './CSS/about.css';
 const faqData = [
   {
     question: 'What is KnifeX?',
-    answer: 'KnifeX is a platform where users can buy and sell various types of knives. We offer a wide range of knives to cater to different needs and preferences.'
+    answer: 'KnifeX is a platform where users can buy and sell CS2 skins.'
   },
   {
     question: 'How do I create an account?',
@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div className='about-container'>
       <h1>About KnifeX</h1>
-      <p>At Knifex, we offer the best CS:GO knife skins to elevate your gaming experience. Discover your perfect blade today!</p>      
+      <p>At Knifex, we offer the best CS2 knife skins to elevate your gaming experience. Discover your perfect blade today!</p>      
       <h2>Frequently Asked Questions:</h2>
       <div className='faq-section'>
         {faqData.map((item, index) => (
