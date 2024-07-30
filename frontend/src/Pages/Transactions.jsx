@@ -5,11 +5,11 @@ const Transactions = () => {
     const transactions = [
         {
             id: 1,
-            item: 'Karambit | Tiger Tooth',
+            item: 'M9 Bayonet | Lore',
             type: 'Sold',
-            date: '2024-07-20',
-            price: '$150.00',
-            buyer: 'John Doe'
+            date: '2024-07-29',
+            price: '$330.00',
+            buyer: 'User'
         },
         {
             id: 2,

@@ -1,0 +1,80 @@
+.purchase-sale-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto; /* Allow scrolling */
+}
+
+.purchase-sale-modal {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.purchase-sale-modal h1 {
+    margin-bottom: 20px;
+}
+
+.purchase-sale-modal img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.purchase-sale-section {
+    margin-bottom: 20px;
+}
+
+.purchase-sale-section h2 {
+    margin-bottom: 10px;
+}
+
+.purchase-sale-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.purchase-sale-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.purchase-sale-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-sale-btn.cancel-btn {
+    background-color: #f44336;
+    margin-left: 10px;
+}
+
+.purchase-sale-btn:hover {
+    background-color: #45a049;
+}
+
+.purchase-sale-btn.cancel-btn:hover {
+    background-color: #e53935;
+}

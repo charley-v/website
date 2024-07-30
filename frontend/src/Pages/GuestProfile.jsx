@@ -23,7 +23,7 @@ export const GuestProfile = () => {
   return (
     <div>
       <div className='profile'>
-        <h1>Guest Profile</h1>
+        <h1>User Profile</h1>
         <p>Name: {user.profile.name}</p>
         <p>Email: {user.profile.email}</p>
         <p>Username: {user.profile.username}</p>

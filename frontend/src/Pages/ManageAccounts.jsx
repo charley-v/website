@@ -3,8 +3,8 @@ import './CSS/ManageAccounts.css';
 //import { useUser } from '../Context/UserContext';
 
 const initialUsers = [
-  { id: 1, name: 'John Doe', email: 'john@example.com', role: 'guest' },
-  { id: 2, name: 'Jane Smith', email: 'jane@example.com', role: 'guest' },
+  { id: 1, name: 'User', email: 'user@gmail', role: 'user' },
+  { id: 2, name: 'John Doe', email: 'john@example.com', role: 'guest' },
   { id: 3, name: 'Admin User', email: 'admin@example.com', role: 'admin' },
 ];
 
